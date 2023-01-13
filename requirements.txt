@@ -1,0 +1,8 @@
+flask
+jinja2
+Flask-SQLAlchemy
+Werkzeug
+MarkupSafe
+itsdangerous
+Click
+flask-wtf
