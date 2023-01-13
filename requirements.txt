@@ -1,8 +1,9 @@
-flask
+flask==2.2.2
 jinja2
 Flask-SQLAlchemy
-Werkzeug
+Werkzeug=2.2.2
 MarkupSafe
 itsdangerous
 Click
 flask-wtf
+wtforms==2.2.1
