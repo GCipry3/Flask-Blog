@@ -7,3 +7,6 @@ itsdangerous
 Click
 flask-wtf
 wtforms==2.2.1
+flask-bcrypt
+flask-login
+Pillow
