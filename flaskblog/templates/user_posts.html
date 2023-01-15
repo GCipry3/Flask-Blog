@@ -1,13 +1,13 @@
 {% extends "layout.html" %}
 {% block content %}
-<h1 class="mn-3"> Posts by {{user.username}} ({{posts.total}})</h1>
+<h1 class="mn-3 text-center"> Posts by {{user.username}} ({{posts.total}})</h1>
 {% for post in posts.items %}
 <article class="media content-section d-flex justify-content-start">
     <img class="rounded-circle article-img" src="{{url_for('static',filename='profile_pics/'+post.author.image_file)}}">
     <div class="media-body">
         <div class="article-metadata">
             <a class="mr-2" href="{{url_for('user_posts',username=post.author.username)}}">{{ post.author.username }}</a>
-            <small class="text-muted">{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
+            <small class="text-muted">{{ post.date_posted.strftime('%Y-%m-%d %H-%M') }}</small>
         </div>
         <h2><a class="article-title" href="{{ url_for('post',post_id=post.id) }}">{{ post.title }}</a></h2>
         <p class="article-content">{{ post.content }}</p>
@@ -18,9 +18,9 @@
 {% for page_num in posts.iter_pages(left_edge=1, right_edge=1 , left_current=2, right_current=2) %}
     {% if page_num %}
         {% if posts.page == page_num %}
-            <a class="btn btn-info mb-4" href="{{url_for('user_posts',username=user.username,page=page_num)}}">{{page_num}}</a>
+            <a class="btn btn-success mb-4" href="{{url_for('user_posts',username=user.username,page=page_num)}}">{{page_num}}</a>
         {% else %}
-            <a class="btn btn-outline-info mb-4" href="{{url_for('user_posts',username=user.username,page=page_num)}}">{{page_num}}</a>
+            <a class="btn btn-outline-success mb-4" href="{{url_for('user_posts',username=user.username,page=page_num)}}">{{page_num}}</a>
         {% endif %}
     {% else %}
         ...

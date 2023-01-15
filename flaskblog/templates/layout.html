@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header class="site-header">
+    <header class="site-header sticky-top">
         <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
             <div class="container">
                 <a class="navbar-brand mr-4" href="{{url_for('home')}}">Flask Blog</a>
@@ -33,12 +33,12 @@
                     <!-- Navbar Right Side -->
                     <div class="navbar-nav">
                         {% if current_user.is_authenticated %}
-                            <a class="nav-item nav-link" href="{{url_for('new_post')}}">New Post</a>
-                            <a class="nav-item nav-link" href="{{url_for('account')}}">Account</a>
-                            <a class="nav-item nav-link" href="{{url_for('logout')}}">Logout</a>
+                        <a class="nav-item nav-link" href="{{url_for('new_post')}}">New Post</a>
+                        <a class="nav-item nav-link" href="{{url_for('account')}}">Account</a>
+                        <a class="nav-item nav-link" href="{{url_for('logout')}}">Logout</a>
                         {% else %}
-                            <a class="nav-item nav-link" href="{{url_for('login')}}">Login</a>
-                            <a class="nav-item nav-link" href="{{url_for('register')}}">Register</a>
+                        <a class="nav-item nav-link" href="{{url_for('login')}}">Login</a>
+                        <a class="nav-item nav-link" href="{{url_for('register')}}">Register</a>
                         {% endif %}
                     </div>
                 </div>
@@ -63,15 +63,12 @@
             </div>
             <div class="col-md-4">
                 <div class="content-section">
-                    <h3>Our Sidebar</h3>
-                    <p class='text-muted'>You can put any information here you'd like.
-                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-light">Latest Posts</li>
-                        <li class="list-group-item list-group-item-light">Announcements</li>
-                        <li class="list-group-item list-group-item-light">Calendars</li>
-                        <li class="list-group-item list-group-item-light">etc</li>
+                    <h3>Menu</h3>
+                    <ul class="list-group text-muted">
+                        <li class="list-group-item list-group-item-light"><a href="{{url_for('home')}}">Latest Posts</a></li>
+                        <li class="list-group-item list-group-item-light"><a href="#">Announcements</a></li>
+                        <li class="list-group-item list-group-item-light"><a href="#">etc</a></li>
                     </ul>
-                    </p>
                 </div>
             </div>
         </div>

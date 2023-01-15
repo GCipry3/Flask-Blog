@@ -1,4 +1,46 @@
 {% extends "layout.html"%}
 {% block content %}
-    <h1>About</h1>
+    <h1 class="text-center">Blog Utilization Tutorial</h1><br>
+    <dl class="row mb-5">
+        <dt class="col-sm-3 subtile-color">Sign up</dt>
+        <dd class="col-sm-9">Sign up for an account on the blog by providing your personal information and a valid email
+            address. This will allow you to create new posts, update existing posts and delete them as well.</dd>
+        <dt class="col-sm-3 subtile-color">Create posts</dt>
+        <dd class="col-sm-9">Once you have an account, you can create new posts by navigating to the appropriate section and
+            filling out the necessary fields such as the title, content, and any relevant media.</dd>
+        <dt class="col-sm-3 subtile-color">Edit/Delete</dt>
+        <dd class="col-sm-9">As a registered user, you have the ability to edit or delete your previously created posts by
+            navigating to the post and selecting the appropriate action.</dd>
+        <dt class="col-sm-3 subtile-color">View Posts</dt>
+        <dd class="col-sm-9">Additionally, you can view other users' posts by browsing through the different categories or
+            searching for specific content or authors.</dd>
+    </dl><hr>
+    
+    <h1 class="text-center">Brief description of the technologies used</h1><br>
+    <dl class="row">
+        <dt class="col-sm-3 subtile-color">Flask</dt>
+        <dd class="col-sm-9">Flask is a lightweight Python web framework that provides useful tools and features for
+            creating web applications.</dd>
+        <dt class="col-sm-3 subtile-color">Flask-SQLAlchemy</dt>
+        <dd class="col-sm-9">Flask-SQLAlchemy is an extension for Flask that adds support for the SQLAlchemy ORM (Object
+            Relational Mapper) to handle database operations.</dd>
+        <dt class="col-sm-3 subtile-color">Flask-Login</dt>
+        <dd class="col-sm-9">Flask-Login is an extension for Flask that provides user session management for logging in and
+            out of the application.</dd>
+        <dt class="col-sm-3 subtile-color">Flask-Bcrypt</dt>
+        <dd class="col-sm-9">Flask-Bcrypt is an extension for Flask that adds support for securely hashing and checking user
+            passwords using the Bcrypt algorithm.</dd>
+        <dt class="col-sm-3 subtile-color">Flask-WTF</dt>
+        <dd class="col-sm-9">Flask-WTF is an extension for Flask that integrates the WTForms library for handling forms in
+            the application.</dd>
+        <dt class="col-sm-3 subtile-color">Jinja2</dt>
+        <dd class="col-sm-9">Jinja2 is a template engine for Python that is commonly used with Flask to render templates and
+            generate HTML pages.</dd>
+        <dt class="col-sm-3 subtile-color">Bootstrap</dt>
+        <dd class="col-sm-9">Bootstrap is a popular HTML, CSS, and JavaScript framework for developing responsive,
+            mobile-first web applications.</dd>
+        <dt class="col-sm-3 subtile-color">Pillow</dt>
+        <dd class="col-sm-9">Pillow is a library for handling images in Python, including opening, manipulating and saving
+            various image file formats.</dd>
+    </dl>
 {% endblock content %}
