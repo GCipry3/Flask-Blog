@@ -14,6 +14,11 @@ It also provides functionality for __pagination__ and __image uploads__.
 Overall, the project provides a simple and clean blog platform for users to share their thoughts and ideas.
 
 
+## Application Deployment Scheme
+
+![DeploymentScheme](https://github.com/GCipry3/Flask-Blog/blob/main/docs/ApplicationScheme.png)
+
+
 ## Deployment
 
 For deployment, the project was deployed on an __Amazon Web Services (AWS) 
@@ -49,8 +54,3 @@ for better monitoring and troubleshooting.
 
 * The Config File:
 ![ConfigFile](https://github.com/GCipry3/Flask-Blog/blob/main/docs/SupervisorConfigFile.png)
-
-
-## Application Deployment Scheme
-
-![DeploymentScheme](https://github.com/GCipry3/Flask-Blog/blob/main/docs/ApplicationScheme.png)
