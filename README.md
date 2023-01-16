@@ -54,3 +54,56 @@ for better monitoring and troubleshooting.
 
 * The Config File:
 ![ConfigFile](https://github.com/GCipry3/Flask-Blog/blob/main/docs/SupervisorConfigFile.png)
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone git@github.com:GCipry3/Flask-Blog.git
+```
+
+Go to the project directory
+
+```bash
+  cd Flask-Blog
+```
+
+Install dependencies
+
+* Install python3 , python3 virtual environment module and pip
+```bash
+  sudo apt install python3 python3-venv python3-pip
+```
+
+* Create the virtual environment
+```bash
+  python3 -m venv .venv
+```
+
+* Activate the virtual environment to separate all the necessary dependencies from the computer
+```bash
+  source .venv/bin/activate
+```
+
+* Install the dependencies into the venv
+```bash
+  pip install -r requirements.txt
+```
+
+Start the server
+
+```bash
+  export FLASK_APP=run  
+```
+
+```bash
+  flask run
+```
+
+Open the application
+
+* Access the localhost on port 5000 through your browser
+```http
+  http://localhost:5000/
+```
