@@ -1,5 +1,8 @@
 
-# Flask-Blog
+# Flask-Blog 
+```diff
+-( Server status : Offline for maintenance)
+```
 
 The project is a __web-based__ blog application built using the Flask web framework and Flask-SQLAlchemy extension. 
 
