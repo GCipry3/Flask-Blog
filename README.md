@@ -27,9 +27,6 @@ Overall, the project provides a simple and clean blog platform for users to shar
 For deployment, the project was deployed on an __Amazon Web Services (AWS) 
 Elastic Compute Cloud (EC2) instance__, which is a virtual server that allows users to run their applications on the cloud. 
 
-* Inbound Rules for our EC2 instance
-![InboundRules](https://github.com/GCipry3/Flask-Blog/blob/main/docs/InboundRules.jpg)
-
 The application is run using __Gunicorn__, a Python Web Server Gateway Interface (WSGI) 
 HTTP server, and __Nginx__, a high-performance web server and reverse proxy. 
 
